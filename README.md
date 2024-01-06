@@ -12,15 +12,19 @@ node bws.js [shouldSync:true] [session]
 
 ### Setup vault
 1. Open bitwarden and create a folder called `ssh-agent`
-2. Create items with the following fields:
-  - name: `private_key`
-    value: `<private key>`
-  - name: `public_key`
-    value: `<public key>`
-    NOTE: not used yet
-  - name: `private`
-    value: `<private key name>`
-   NOTE: not used yet
+2. Create items with the following info:
+```
+  - name: `{text}`
+    NOTE: If the first character is `#`, ignore this key. Also, if the first character is `+`, the file will be saved in `~/.ssh/${prtivate field value}`.
+    custom fields:
+      - name: `private_key`
+        value: `<private key>`
+      - name: `public_key`
+        value: `<public key>`
+        NOTE: not used yet
+      - name: `private`
+        value: `<private key name>`
+```
 
 ### Setup ssh-agent
 1. Run `ssh-agent`
