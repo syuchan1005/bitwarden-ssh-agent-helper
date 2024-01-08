@@ -25,6 +25,12 @@ node bws.js [shouldSync:true] [session]
       - name: `private`
         value: `<private key name>`
 ```
+<details>
+<summary>Vault item sample (sceennshot)</summary>
+
+![Vault item screenshot](vault.bitwarden.com_.png)
+
+</details>
 
 ### Setup ssh-agent
 1. Run `ssh-agent`
