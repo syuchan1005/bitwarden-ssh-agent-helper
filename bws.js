@@ -72,7 +72,8 @@ const keyDataList = items
             privateKeyFileName: item.fields.find((field) => field.name === 'private').value,
             privateKey: privateKeys[0]
                 .value
-                .replace(/ ([^ ]{30,})/g, '\n$1').replace(' -----END', '\n-----END'),
+                .replace(/ ([^ ]{30,})/g, '\n$1').replace(' -----END', '\n-----END')
+                + '\n',
             dist: { '+': 'file', '#': 'ignore' }[item.name[0]] || 'agent',
         };
     })
